@@ -18,6 +18,29 @@ td {
 	text-align: right;
 }
 
+site-header h2 { 
+	font-style:normal;
+}
+
+.site-content {
+	margin-left:0px;
+	margin-right:40px;
+}
+
+.entry-meta .posted_on {
+	background:#d62647;
+	color:#FFF;
+	font-weight:bold;
+	left:auto;
+	right:-100px;
+	padding:5px 25px 5px 5px;
+	position:absolute;
+	top:0px; 
+	text-align:center;
+	text-transform:uppercase;
+	width:60px;	
+}
+
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
@@ -122,6 +145,11 @@ article.format-link .entry-content {
 	margin-right: 0.357142857rem;
 	margin-left: auto;
 }
+.commentlist .children {
+	margin-right: 48px;
+	margin-right: 3.428571429rem;
+	margin-left: auto;
+}
 
 /* Comment form */
 #respond h3#reply-title #cancel-comment-reply-link {
@@ -154,11 +182,6 @@ label ~ span.required {
 	margin-right: 0.857142857rem;
 	margin-left: auto;
 }
-.widget-area .textwidget li {
-	margin-left: auto;
-	margin-right: 36px;
-	margin-right: 2.571428571rem;
-}
 .widget_recent_entries .post-date,
 .widget_rss .rss-date {
 	margin-right: 12px;
@@ -190,10 +213,10 @@ label ~ span.required {
 	.entry-page-image {
 		float: left;
 	}
-	.site-header h1,
-	.site-header h2 {
+	.site-header h1 {
 		text-align: right;
 	}
+	
 	.template-front-page .widget-area .widget_text img {
 		float: right;
 		margin: 8px 0 8px 24px;
@@ -229,9 +252,22 @@ label ~ span.required {
 		border-right: 0;
 		border-left: none;
 	}
-	.commentlist .children {
-		margin-right: 48px;
-		margin-right: 3.428571429rem;
-		margin-left: auto;
+}
+
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+	header#masthead > hgroup h1 {
+		left:auto; 
+		right:-40px;
+		text-align:right;
 	}
+		header#masthead > hgroup h2 {
+			position:relative; 
+			top:-130px; 
+			text-align:left;
+		}
+		#secondary {
+			margin-left:-60px; 
+			margin-right:0;
+		}
 }
