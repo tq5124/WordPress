@@ -7,10 +7,6 @@ if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :
  *
  * @since Twenty Twelve 1.0
  */
-
-//remove the admin bar
-add_filter( 'show_admin_bar', '__return_false' );
-
 function twentytwelve_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
 	$categories_list = get_the_category_list( __( ', ', 'twentytwelve' ) );
@@ -62,3 +58,5 @@ function twentytwelve_posted_on() {
 	);
 }
 endif;
+
+add_filter('show_admin_bar', '_return_false');
